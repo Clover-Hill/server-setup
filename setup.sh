@@ -55,8 +55,8 @@ git clone https://gitee.com/testbook/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-
 
 # 复制并应用.bashrc和.zshrc
 print_message "正在复制并应用.bashrc和.zshrc文件..."
-cp ./bashrc ~/.bashrc
-cp ./zshrc ~/.zshrc
+cp .bashrc ~/.bashrc
+cp .zshrc ~/.zshrc
 source ~/.zshrc
 echo ".bashrc和.zshrc文件已复制并应用。"
 
@@ -73,5 +73,13 @@ cd ~
 git clone https://gitee.com/qiuye/.tmux.git
 ln -s -f .tmux/.tmux.conf
 cp .tmux/.tmux.conf.local .
+
+# 4. Neovim setup 
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:neovim-ppa/unstable -y
+sudo apt update
+sudo apt install neovim
+nvim -v
+echo "Neovim安装完成"
 
 print_message "所有设置完成！"
