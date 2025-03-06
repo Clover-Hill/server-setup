@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # 定义Git用户名和邮箱变量
-GIT_USER_NAME="Your GitHub Username"
-GIT_USER_EMAIL="your_email@example.com"
+GIT_USER_NAME="Maximus"
+GIT_USER_EMAIL="new-era@sjtu.edu.cn"
 
 # 打印信息函数
 print_message() {
