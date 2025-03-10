@@ -50,8 +50,8 @@ git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$H
 
 # 安装Zsh插件
 print_message "正在安装Zsh插件..."
-git clone https://gitee.com/testbook/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://gitee.com/testbook/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://gitee.com/mirrors/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://gitee.com/mirrors/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # 复制并应用.bashrc和.zshrc
 print_message "正在复制并应用.bashrc和.zshrc文件..."
@@ -70,7 +70,7 @@ sudo apt install -y tmux
 # 下载并配置oh-my-tmux
 print_message "正在安装oh-my-tmux..."
 cd ~
-git clone https://gitee.com/qiuye/.tmux.git
+git clone https://gitee.com/qiuye_dlmu/.tmux.git
 ln -s -f .tmux/.tmux.conf
 cp .tmux/.tmux.conf.local .
 
