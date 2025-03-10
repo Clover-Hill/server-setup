@@ -42,6 +42,7 @@ sudo apt install -y zsh
 
 # 安装oh-my-zsh
 print_message "正在安装oh-my-zsh..."
+<<<<<<< HEAD
 sh -c "$(curl -fsSL https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh)"
 
 # 安装Powerlevel10k主题

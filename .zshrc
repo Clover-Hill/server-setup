@@ -1,5 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export TRANSFORMERS_CACHE="/fs-computility/plm/shared/jqcao/models"
+export HF_DATASETS_CACHE="/fs-computility/plm/shared/jqcao/datasets"
+export HF_HOME="/fs-computility/plm/shared/jqcao/hf_cache"
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
