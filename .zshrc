@@ -3,6 +3,7 @@
 export TRANSFORMERS_CACHE="/fs-computility/plm/shared/jqcao/models"
 export HF_DATASETS_CACHE="/fs-computility/plm/shared/jqcao/datasets"
 export HF_HOME="/fs-computility/plm/shared/jqcao/hf_cache"
+export HF_ENDPOINT=https://hf-mirror.com
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
