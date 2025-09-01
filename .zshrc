@@ -1,9 +1,22 @@
 # If you come from bash you might have to change your $PATH.
+# set java
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64  # Adjust path
+export PATH=$JAVA_HOME/bin:$PATH
+
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export TRANSFORMERS_CACHE="/fs-computility/plm/shared/jqcao/models"
-export HF_DATASETS_CACHE="/fs-computility/plm/shared/jqcao/datasets"
+export HOME="/root"
 export HF_HOME="/fs-computility/plm/shared/jqcao/hf_cache"
 export HF_ENDPOINT=https://hf-mirror.com
+
+export BNB_CUDA_VERSION=124
+export LD_LIBRARY_PATH=/usr/local/cuda-12.4:$LD_LIBRARY_PATH
+
+# Setup Proxy
+alias setproxy="export HTTPS_PROXY=http://100.68.170.107:3128 HTTP_PROXY=http://100.68.170.107:3128"
+alias unsetproxy="unset HTTPS_PROXY HTTP_PROXY"
+
+# Setup hfd
+alias hfd="/fs-computility/plm/shared/jqcao/utils/hfd.sh"
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -109,3 +122,20 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/fs-computility/plm/shared/jqcao/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/fs-computility/plm/shared/jqcao/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/fs-computility/plm/shared/jqcao/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/fs-computility/plm/shared/jqcao/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+[ -r ~/.volc/.profile ] && source ~/.volc/.profile #[volc installer]

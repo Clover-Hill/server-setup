@@ -20,6 +20,7 @@ git clone https://gitee.com/mirrors/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-
 print_message "正在复制并应用.bashrc和.zshrc文件..."
 cp .bashrc ~/.bashrc
 cp .zshrc ~/.zshrc
+cp .p10k.zsh ~/.p10k.zsh
 source ~/.zshrc
 echo ".bashrc和.zshrc文件已复制并应用。"
 
